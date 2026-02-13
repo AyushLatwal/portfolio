@@ -1,49 +1,82 @@
 
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Ayush Latwal - Cloud Computing Specialist & Full Stack Developer" />
+    <meta name="theme-color" content="#030712" />
     <title>Ayush Latwal | Cloud Computing & CSE Professional</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      html {
+        scroll-behavior: smooth;
+      }
+      
       body {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         background-color: #030712;
         color: #f3f4f6;
+        line-height: 1.6;
+        overflow-x: hidden;
       }
+      
+      #root {
+        min-height: 100vh;
+      }
+      
       .gradient-text {
         background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        background-clip: text;
       }
+      
       .bg-glass {
         background: rgba(17, 24, 39, 0.7);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
       }
+      
       .hero-grid {
         background-image: radial-gradient(circle at 2px 2px, rgba(37, 99, 235, 0.05) 1px, transparent 0);
         background-size: 40px 40px;
       }
+      
       ::-webkit-scrollbar {
-        width: 8px;
+        width: 10px;
       }
+      
       ::-webkit-scrollbar-track {
         background: #030712;
       }
+      
       ::-webkit-scrollbar-thumb {
         background: #1f2937;
-        border-radius: 10px;
+        border-radius: 5px;
       }
+      
       ::-webkit-scrollbar-thumb:hover {
         background: #374151;
       }
+      
       @keyframes float {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-10px); }
+        0%, 100% { 
+          transform: translateY(0px); 
+        }
+        50% { 
+          transform: translateY(-12px); 
+        }
       }
+      
       .animate-float {
         animation: float 4s ease-in-out infinite;
       }
