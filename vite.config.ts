@@ -8,8 +8,10 @@ export default defineConfig({
     port: 3000,
     host: '0.0.0.0',
     strictPort: false,
-    allowedHosts: ['*'],
     cors: true,
+    fs: {
+      allow: ['/vercel/share/v0-project'],
+    },
   },
   preview: {
     port: 4173,
@@ -24,17 +26,22 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: false,
-    minify: 'terser',
+    minify: 'esbuild',
     reportCompressedSize: false,
     rollupOptions: {
       output: {
-        manualChunks: {
-          'vendor': ['react', 'react-dom'],
-        },
+        manualChunks: undefined,
       },
     },
   },
   optimizeDeps: {
-    include: ['react', 'react-dom', 'lucide-react', 'framer-motion'],
+    include: ['react', 'react-dom'],
+    exclude: ['lucide-react', 'framer-motion'],
+    esbuildOptions: {
+      target: 'esnext',
+      supported: {
+        bigint: true,
+      },
+    },
   },
 });
