@@ -1,20 +1,81 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Ayush Latwal - Portfolio Website
 
-# Run and deploy your AI Studio app
+A modern, responsive portfolio website built with React, TypeScript, Tailwind CSS, and Framer Motion. Showcasing cloud computing expertise, full-stack development skills, and professional achievements.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1Rrp28BB7qJxEPJAqTvnaib_8hGkhTls-
+- Modern, responsive design with dark theme
+- Smooth animations using Framer Motion
+- Skills showcase with progress indicators
+- Detailed project portfolio
+- Certifications and achievements display
+- Contact section with email integration
+- Mobile-optimized navigation
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+- **Frontend**: React 19, TypeScript
+- **Styling**: Tailwind CSS 3
+- **Build Tool**: Vite 6
+- **Animations**: Framer Motion 11
+- **Icons**: Lucide React
 
+## Prerequisites
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- Node.js 16+ 
+- npm or yarn
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AyushLatwal/portfolio.git
+   cd portfolio
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Create `.env.local` file with your environment variables:
+   ```bash
+   VITE_GEMINI_API_KEY=your_api_key_here
+   ```
+
+## Running Locally
+
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:3000`
+
+## Building for Production
+
+```bash
+npm run build
+```
+
+The optimized production build will be in the `dist/` directory.
+
+## Preview Production Build
+
+```bash
+npm run preview
+```
+
+## Deployment
+
+This project can be easily deployed to Vercel:
+
+```bash
+npm run build
+vercel deploy dist
+```
+
+Or connect your GitHub repository to Vercel for automatic deployments.
+
+## License
+
+MIT
